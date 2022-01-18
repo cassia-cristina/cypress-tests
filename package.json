@@ -1,0 +1,19 @@
+{
+  "name": "curso-cypress-udemy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress run",
+    "open": "npx cypress open"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "cypress": "^9.2.1"
+  },
+  "dependencies": {
+    "cypress-xpath": "^1.6.2"
+  }
+}
