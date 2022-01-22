@@ -1,0 +1,22 @@
+[
+    {
+      "conta_id": 1030904,
+      "conta": "Conta para movimentacoes stub",
+      "saldo": "-1500.00"
+    },
+    {
+      "conta_id": 1030905,
+      "conta": "Conta com movimentacao stub",
+      "saldo": "-1500.00"
+    },
+    {
+      "conta_id": 1030906,
+      "conta": "Conta para saldo stub",
+      "saldo": "4034.00"
+    },
+    {
+      "conta_id": 1030907,
+      "conta": "Conta para extrato stub",
+      "saldo": "-220.00"
+    }
+  ]

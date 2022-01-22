@@ -11,9 +11,10 @@
   "license": "MIT",
   "devDependencies": {
     "chai": "^4.3.4",
-    "cypress": "^9.2.1"
+    "cypress": "^9.3.1"
   },
   "dependencies": {
-    "cypress-xpath": "^1.6.2"
+    "cypress-xpath": "^1.6.2",
+    "moment": "^2.29.1"
   }
 }

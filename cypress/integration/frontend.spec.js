@@ -1,15 +1,28 @@
 /// <reference types="Cypress" />
 
-import locator from '../../support/locators'
-import '../../support/commandsConta'
-import '../../support/commandsMov'
+import locator from '../support/utils/locators'
+import '../support/commandsConta'
+import '../support/movimentacao/commandsMov'
 
-describe('Functional tests', () => {
-    const user = Cypress.env('user_email')
-    const password = Cypress.env('user_psswd')
+describe('Frontend tests', () => {
 
     before(() => {
-        cy.login(user,password)
+        cy.intercept('POST', '/signin', (req) => {
+            req.reply({
+                statusCode: 200,
+                fixture: 'userFront.json'
+            })
+        }).as('signin')
+
+        cy.intercept('GET', '/saldo', (req) => {
+            req.reply({
+                statusCode: 200,
+                fixture: 'saldo.json'
+            })
+        }).as('saldo')
+
+        cy.login('login@gmail.com', '0000')
+
         cy.resetApp()
     });
 
@@ -18,7 +31,7 @@ describe('Functional tests', () => {
         cy.resetApp()
     });
 
-    it('Should create a new account', () => {
+    it.only('Should create a new account', () => {
         cy.acessarMenuContas()
         cy.inserirConta('Conta de teste')
         cy.get(locator.MESSAGE).should('contain', 'Conta inserida com sucesso!')
@@ -44,8 +57,8 @@ describe('Functional tests', () => {
         cy.xpath(locator.EXTRATO.VALUE('Movimentação de teste', '1.200')).should('exist')
     });
 
-    it('Should get balance', () => {
-        cy.xpath(locator.SALDO.SALDO_CONTA('Conta para saldo')).should('contain','534')
+    it('Must check balance', () => {
+        cy.xpath(locator.SALDO.SALDO_CONTA('Conta para saldo')).should('contain', '534')
     });
 
     it('Should remove a financial move', () => {
@@ -59,9 +72,9 @@ describe('Functional tests', () => {
 
         cy.editarMovimentacao('Movimentacao 1, calculo saldo')
         cy.get(locator.MESSAGE).should('contain', 'Movimentação alterada com sucesso!')
-        
+
         cy.get(locator.MENU.HOME).click()
-        cy.xpath(locator.SALDO.SALDO_CONTA('Conta para saldo')).should('contain','4.034,00')
+        cy.xpath(locator.SALDO.SALDO_CONTA('Conta para saldo')).should('contain', '4.034,00')
 
     });
 
