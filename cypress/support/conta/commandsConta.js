@@ -1,6 +1,6 @@
 /// <reference types="Cypress" />
 
-import locator from './locators'
+import locator from '../utils/locators'
 
 Cypress.Commands.add('acessarMenuContas', () => {
     cy.get(locator.MENU.SETTINGS).click()

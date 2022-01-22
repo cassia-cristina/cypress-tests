@@ -1,6 +1,6 @@
 /// <reference types="Cypress" />
 
-import locator from './locators'
+import locator from './utils/locators'
 
 // *** Comandos para a aplicação Barriga React ***
 Cypress.Commands.add('login', (user, psswd) => {

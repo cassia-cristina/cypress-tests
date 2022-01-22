@@ -1,7 +1,7 @@
 /// <reference types="Cypress" />
 
 import locator from '../support/utils/locators'
-import '../support/commandsConta'
+import '../support/conta/commandsConta'
 import '../support/movimentacao/commandsMov'
 
 describe('Frontend tests', () => {
