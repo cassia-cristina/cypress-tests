@@ -29,6 +29,7 @@ const locators = {
     },
     EXTRATO: {
         LINHAS: '.list-group li',
+        DESC: (desc) => `//li[contains(.,"${desc}")]`,
         VALUE: (desc, value) => `//li[contains(.,"${desc}")]//following-sibling::small[contains(.,"${value}")]`,
         REMOVE: desc => `//li[contains(.,"${desc}")]/div/div[2]/i`,
         EDIT: desc => `//li[contains(.,"${desc}")]//a`

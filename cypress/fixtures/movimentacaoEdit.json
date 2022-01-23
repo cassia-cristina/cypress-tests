@@ -1,0 +1,15 @@
+{
+    "id": 960346,
+    "descricao": "Movimentacao 1, calculo saldo",
+    "envolvido": "Anizio",
+    "observacao": null,
+    "tipo": "REC",
+    "data_transacao": "2022-01-22T03:00:00.000Z",
+    "data_pagamento": "2022-01-22T03:00:00.000Z",
+    "valor": "1200.01",
+    "status": false,
+    "conta_id": 1031125,
+    "usuario_id": 27272,
+    "transferencia_id": null,
+    "parcelamento_id": null
+  }

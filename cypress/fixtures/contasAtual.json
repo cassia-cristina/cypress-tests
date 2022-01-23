@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1031123,
+    "nome": "Conta para alterar stub",
+    "visivel": true,
+    "usuario_id": 27272
+  },
+  {
+    "id": 1031124,
+    "nome": "Conta mesmo nome stub",
+    "visivel": true,
+    "usuario_id": 27272
+  },
+  {
+    "id": 1031125,
+    "nome": "Conta para movimentacoes stub",
+    "visivel": true,
+    "usuario_id": 27272
+  },
+  {
+    "id": 1031126,
+    "nome": "Conta com movimentacao stub",
+    "visivel": true,
+    "usuario_id": 27272
+  },
+  {
+    "id": 9999999,
+    "nome": "Conta de teste",
+    "visivel": true,
+    "usuario_id": 27272
+  }
+]
