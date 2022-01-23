@@ -1,5 +1,5 @@
 # Testes com Cypress
-Projeto do Curso: Testes de aplicações modernas com Cypress
+Projeto do Curso: Testes de aplicações modernas com Cypress - 
 Instrutor: Francisco Wagner Costa Aquino
 
 **Integration:**
@@ -7,6 +7,6 @@ Instrutor: Francisco Wagner Costa Aquino
 ```
 api.spec => Testes para o backend
 frontend.spec => Testes isolando o frontend, interceptando as requisições e simulando dados fictícios
-funtional.spec => Testes End-to-End
+functional.spec => Testes End-to-End
 ```
 
