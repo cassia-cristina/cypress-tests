@@ -25,8 +25,7 @@ jobs:
           spec: cypress/integration/functional.spec.js
         env:
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}          
           
   api-tests:
     runs-on: ubuntu-latest
@@ -41,7 +40,7 @@ jobs:
         uses: cypress-io/github-action@v2
         with:
           install-command: yarn install
-          wait-on: ${{ secrets.BASE_URL }}
+          wait-on: ${{ secrets.BASE_URL2 }}
           wait-on-timeout: 120
           browser: chrome
           record: true
