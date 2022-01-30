@@ -1,5 +1,4 @@
 .DS_Store
-cypress.env.json
 cypress/integration/diversos/
 cypress/support/commandsDiversos.js
 cypress/screenshots/
