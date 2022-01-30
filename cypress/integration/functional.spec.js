@@ -14,7 +14,6 @@ describe('Functional tests', () => {
     });
 
     beforeEach(() => {
-        Cypress.config('chromeWebSecurity', true);
         cy.get(locator.MENU.HOME)
         cy.resetApp()
     });

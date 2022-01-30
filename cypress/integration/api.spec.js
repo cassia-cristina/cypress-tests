@@ -8,7 +8,6 @@ describe('API tests: account registration and transactions', () => {
     const password = Cypress.env('user_psswd')
 
     before(() => {
-        Cypress.config('chromeWebSecurity', true);
         //Gera o token e já armazena em uma variavel de ambiente
         cy.getToken(user, password)
 
