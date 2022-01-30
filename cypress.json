@@ -1,5 +1,5 @@
 {
     "baseUrl": "https://barrigarest.wcaquino.me",
     "projectId": "x8ofux",
-    "chromeWebSecurity": true
+    "chromeWebSecurity": false
 }
